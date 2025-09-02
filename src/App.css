@@ -1,6 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;  /* pushes footer down */
+}
+jsx
+Copy code
+
+
 .brand-name {
   margin-left: 10px;
   font-family: "Rowdies", sans-serif;
@@ -19,6 +37,17 @@
 .navbar li {
   color: black;
 }
+.nav-pills .nav-link {
+  color: black !important;
+  border-radius: 0 !important;
+}
+
+.nav-pills .nav-link.active {
+  background-color: transparent !important;
+  color: black !important;
+  border-bottom: 3px solid black;
+}
+
 .home {
   min-width: 80%;
   margin-top: -120px;
@@ -32,10 +61,11 @@
 .contact-form div {
   width: 80%;
 }
+
 .btn a {
   text-decoration: none;
-  color: black;
-  font-weight: 600;
+  color: white;
+  font-weight: 500;
 }
 .hire {
   background-color: orange;
@@ -51,6 +81,10 @@
 }
 .about {
   box-shadow: 10px 10px 8px #888888;
+}
+.about p{
+  text-align: left;
+  word-wrap: break-word;
 }
 /* .about-btn{
   border-radius: 50%;
@@ -79,4 +113,63 @@
   .service{
     margin-left: 20px;
   }
+}
+
+.skill-table{
+  font-size:1.5rem;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+.skill{
+  /* border: 1px solid black; */
+  height: 430px;
+  box-shadow: 10px 10px 5px grey;
+}
+
+.skill-table:hover{
+  height: 400px;
+}
+
+.cert-card .cert-overlay {
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.cert-card:hover .cert-overlay {
+  opacity: 1;
+}
+.cert-card {
+  height: 300px;   /* fix the card size */
+}
+
+.cert-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.timeline {
+  position: relative;
+  margin: 20px 0;
+  padding-left: 30px;
+  border-left: 3px solid #0d6efd; /* Bootstrap primary color */
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -12px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.timeline-content {
+  margin-left: 20px;
+  background: #fff;
 }

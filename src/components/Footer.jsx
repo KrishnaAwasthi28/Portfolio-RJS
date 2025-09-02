@@ -1,10 +1,11 @@
 import { FaGithub } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa";
+import { BsLinkedin } from "react-icons/bs";
 const Footer = () => {
   return (
     <div class="container">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top ">
         <div class="col-md-4 d-flex align-items-center">
           <a
             href="/"
@@ -15,14 +16,14 @@ const Footer = () => {
             </svg>
           </a>
           <span class="mb-3 mb-md-0 text-body-secondary">
-            © 2024 Company, Inc
+            © 2025 Company, Inc
           </span>
         </div>
 
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
           <li class="ms-3 contact-icons">
-            <a class="text-body-secondary" href="#">
-            <FaFacebook />
+            <a class="text-body-secondary" href="linkedin.com/in/krishna-awasthi-5a26a1213">
+            <BsLinkedin />
             </a>
           </li>
           <li class="ms-3 contact-icons">

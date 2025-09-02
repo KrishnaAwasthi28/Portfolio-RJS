@@ -1,119 +1,75 @@
-import Projects from "./Projects";
-import { FaJava } from "react-icons/fa6";
+import { FcSupport } from "react-icons/fc";
+import { FaFileCode } from "react-icons/fa";
+import { FaCodeBranch } from "react-icons/fa";
+import { BsDatabaseFillCheck } from "react-icons/bs";
+import { SiCodeblocks } from "react-icons/si";
 const Portfolio = () => {
   return (
     <>
-    <div class="container px-4 py-5" id="icon-grid">
-      <h2 class="pb-2 border-bottom">Skills </h2>
+      <section className="container my-4">
+      <h2 className="text-center mb-5 fw-bold">Skills <FcSupport/></h2>
 
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
-        <div class="col d-flex align-items-start">
-          <svg
-            class="bi text-body-secondary flex-shrink-0 me-3"
-            width="1.75em"
-            height="1.75em"
-          >
-            <use xlink:href="#bootstrap"></use>
-          </svg>
-          <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Java</h3>
-            <p>Proficient in Java programming with expertise in developing robust, scalable applications and object-oriented solutions</p>
+      <div className="row g-4">
+        {/* Languages */}
+        <div className="col-md-6">
+          <div className="card shadow-lg h-100 p-3">
+            <div className="card-body">
+              <h4 className="card-title mb-4">Languages <FaFileCode/></h4>
+              <div className="d-flex flex-wrap gap-3">
+                <span className="badge bg-primary fs-6 px-3 py-2">Java ☕</span>
+                <span className="badge bg-warning text-dark fs-6 px-3 py-2">Python 🐍</span>
+                <span className="badge bg-info text-dark fs-6 px-3 py-2">JavaScript</span>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col d-flex align-items-start">
-          <svg
-            class="bi text-body-secondary flex-shrink-0 me-3"
-            width="1.75em"
-            height="1.75em"
-          >
-            <use xlink:href="#cpu-fill"></use>
-          </svg>
-          <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Python</h3>
-            <p>Skilled in Python development, with experience in building versatile applications, data analysis, and automation solution.</p>
+
+        {/* Frameworks */}
+        <div className="col-md-6">
+          <div className="card shadow-lg h-100 p-3">
+            <div className="card-body">
+              <h4 className="card-title mb-4">Frameworks <FaCodeBranch/></h4>
+              <div className="d-flex flex-wrap gap-3">
+                <span className="badge bg-success fs-6 px-3 py-2">Spring Boot</span>
+                <span className="badge bg-info text-dark fs-6 px-3 py-2">ReactJS ⚛️</span>
+                <span className="badge bg-success fs-6 px-3 py-2">Spring Security</span>
+                <span className="badge bg-secondary fs-6 px-3 py-2">WebSockets</span>
+                <span className="badge bg-primary fs-6 px-3 py-2">Tailwind CSS</span>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col d-flex align-items-start">
-          <svg
-            class="bi text-body-secondary flex-shrink-0 me-3"
-            width="1.75em"
-            height="1.75em"
-          >
-            <use xlink:href="#calendar3"></use>
-          </svg>
-          <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">JavaScript</h3>
-            <p>Experienced in JavaScript for building dynamic, interactive web applications and enhancing front-end functionality.</p>
+
+        {/* Databases */}
+        <div className="col-md-6">
+          <div className="card shadow-lg h-100 p-3">
+            <div className="card-body">
+              <h4 className="card-title mb-4">Databases <BsDatabaseFillCheck/></h4>
+              <div className="d-flex flex-wrap gap-3">
+                <span className="badge bg-danger fs-6 px-3 py-2">MySQL</span>
+                <span className="badge bg-dark fs-6 px-3 py-2">MongoDB</span>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col d-flex align-items-start">
-          <svg
-            class="bi text-body-secondary flex-shrink-0 me-3"
-            width="1.75em"
-            height="1.75em"
-          >
-            <use xlink:href="#home"></use>
-          </svg>
-          <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Machine Learning</h3>
-            <p>Proficient in machine learning, with expertise in building predictive models, data analysis, and algorithm optimization</p>
-          </div>
-        </div>
-        <div class="col d-flex align-items-start">
-          <svg
-            class="bi text-body-secondary flex-shrink-0 me-3"
-            width="1.75em"
-            height="1.75em"
-          >
-            <use xlink:href="#speedometer2"></use>
-          </svg>
-          <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">React JS</h3>
-            <p>Some Experience in React.js, specializing in building responsive, high-performance UI with reusable components..</p>
-          </div>
-        </div>
-        <div class="col d-flex align-items-start">
-          <svg
-            class="bi text-body-secondary flex-shrink-0 me-3"
-            width="1.75em"
-            height="1.75em"
-          >
-            <use xlink:href="#toggles2"></use>
-          </svg>
-          <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">DSA</h3>
-            <p>Strong understanding of Data Structures and Algorithms, with expertise in optimizing code for efficiency and performance.</p>
-          </div>
-        </div>
-        <div class="col d-flex align-items-start">
-          <svg
-            class="bi text-body-secondary flex-shrink-0 me-3"
-            width="1.75em"
-            height="1.75em"
-          >
-            <use xlink:href="#geo-fill"></use>
-          </svg>
-          <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">SpringBoot</h3>
-            <p>Proficient in Spring Boot, with experience in building robust, scalable, and efficient Java-based microservices and web applications.</p>
-          </div>
-        </div>
-        <div class="col d-flex align-items-start">
-          <svg
-            class="bi text-body-secondary flex-shrink-0 me-3"
-            width="1.75em"
-            height="1.75em"
-          >
-            <use xlink:href="#tools"></use>
-          </svg>
-          <div>
-            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">HTML & CSS</h3>
-            <p>Skilled in HTML and CSS for creating well-structured, visually appealing web layouts and ensuring responsive design</p>
+
+        {/* Others */}
+        <div className="col-md-6">
+          <div className="card shadow-lg h-100 p-3">
+            <div className="card-body">
+              <h4 className="card-title mb-4">Others <SiCodeblocks/></h4>
+              <div className="d-flex flex-wrap gap-3">
+                <span className="badge bg-warning text-dark fs-6 px-3 py-2">AWS</span>
+                <span className="badge bg-dark fs-6 px-3 py-2">Git/GitHub</span>
+                <span className="badge bg-secondary fs-6 px-3 py-2">REST APIs</span>
+                <span className="badge bg-success fs-6 px-3 py-2">Machine Learning</span>
+                <span className="badge bg-primary fs-6 px-3 py-2">HTML/CSS</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <Projects></Projects>
+    </section>
     </>
   );
 };

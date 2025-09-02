@@ -3,9 +3,9 @@ import {useTypewriter} from 'react-simple-typewriter';
 
 const Home = ({setSelectedTab}) => {
   const [typeEffect]=useTypewriter({
-    words:['Krishna', 'A Coder','A Web Developer','A React Developer'],
+    words:['Krishna', 'A Coder','A Java Developer','A Full-Stack Developer'],
     typeSpeed:100,
-    delaySpeed:40,
+    delaySpeed:60,
     loop:{},
   })
   return (
@@ -26,14 +26,14 @@ const Home = ({setSelectedTab}) => {
             I'M <span>{typeEffect}</span>
           </h1>
           <p class="lead">
-          This is my official Portfolio Website to showcase My Skills and My Projects
+          A passionate Full Stack Developer with expertise in Java, ReactJS & modern web technologies
           </p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button type="button" class="btn btn-success btn-lg px-4 me-md-2 hire" >
+            <button type="button" class="btn btn-success btn-lg px-4 me-2 hire" >
             <a href="#" onClick={()=>setSelectedTab("Hire")}>Hire Me</a>
             </button>
-            <button type="button" class="btn btn-warning btn-lg px-4 resume">
-            <a href="RESUME (1).pdf" download>Download CV</a>
+            <button type="button" class="btn btn-primary btn-lg px-4 resume">
+            <a href="RESUME_.pdf" download="Krishna_Awasthi_Resume.pdf">Download CV</a>
             </button>
           </div>
         </div>

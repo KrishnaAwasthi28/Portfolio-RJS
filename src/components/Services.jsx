@@ -8,7 +8,7 @@ const Services = () => {
       <div className="card shadow-sm border-0">
         <div className="position-relative cert-card">
           <img
-            src="src/images/oracle-java.png"
+            src="/images/oracle-java.png"
             className="img-fluid rounded"
             alt="Oracle"
           />
@@ -23,7 +23,7 @@ const Services = () => {
       <div className="card shadow-sm border-0">
         <div className="position-relative cert-card">
           <img
-            src="src/images/ethnus-aws.png"
+            src="/images/ethnus-aws.png"
             className="img-fluid rounded"
             alt="Oracle"
           />
@@ -38,7 +38,7 @@ const Services = () => {
       <div className="card shadow-sm border-0">
         <div className="position-relative cert-card">
           <img
-            src="src/images/udemy-java.png"
+            src="/images/udemy-java.png"
             className="img-fluid rounded"
             alt="Oracle"
           />
@@ -53,7 +53,7 @@ const Services = () => {
       <div className="card shadow-sm border-0">
         <div className="position-relative cert-card">
           <img
-            src="src/images/coursera-java.png"
+            src="/images/coursera-java.png"
             className="img-fluid rounded"
             alt="Oracle"
           />
@@ -68,7 +68,7 @@ const Services = () => {
       <div className="card shadow-sm border-0">
         <div className="position-relative cert-card">
           <img
-            src="src/images/ml.png"
+            src="/images/ml.png"
             className="img-fluid rounded"
             alt="Oracle"
           />
